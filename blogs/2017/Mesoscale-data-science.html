@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+</head>
+ <body>
+
+<h2>Stepping back from "Big data" and into "Mesoscale data science"</h2>
+
+<div class='date'> Jan 15, 2017 </div>
+
+
+<p>Hot topics like “big data”, “machine learning”, “data science” are now dominating in the scientific community.  In the past 10 years alone, data availability has increased exponentially (and not even in a squared, or cubed sort of way… we are talking on the order of 1010 if not more). <a href='https://en.wikipedia.org/wiki/Exabyte'>Exabytes</a> <strong>(1018 or one QUINTILLION!!?)</strong> of information are being passed, stored, saved and analyzed on a monthly (perhaps weekly?) basis. This includes credit card transactions (in November 2015, there were approximately 242 million credit card transactions in the United Kingdom alone; <a href='https://www.bba.org.uk/news/press-releases/november-2015-figures-for-the-high-street-banks/#.WG-NC_mLTDd'>(source: BBA)</a>), web searches (Just think about how many times you use Google in the run of a day, and interpolate that out to the 40% of the world who have access to the internet), and any time a user (you) clicks on a link you found on Facebook. When you combine this with the countless other data coming in, it is nearly overwhelming to think about.  This led to the rise of “Big Data” and how “Data Scientist” become the “sexiest job of the 21st century” <a href='https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century'>(source: HBR)</a>. If you’re interested in a brief history of data science and big data, check out <a href='http://www.forbes.com/sites/gilpress/2013/05/09/a-very-short-history-of-big-data/2/#5d19ca9f1af0'>THIS ARTICLE in Forbes magazine</a>.</p>
+
+<img src='../../img/mobiledata.gif' width=45% />
+
+<p>As data scientists, we love big data. Imagine, a nearly endless data source; complete time series which track a person’s spending behavior, or masses of imagery (photos and otherwise) at super fine resolution… even I sit here drooling about the thought of playing with such “clean” and complex data… It offers up the opportunity to explore and analyze systems in ways we had never previously thought possible, and has now opened the doors for talented problem solvers to come along and deal with the complex issues surrounding these big data sets.  But where does that leave the Ecologist? Those tasked with understanding how animals interact with the environment, yet are working with datasets that are literally 5 - 10 orders of magnitude smaller than some of the datasets that industry level data scientists explore (e.g., breeding bird surveys with 20 year time series… in other words, n=20, for particular sites <a href='http://www.mbr-pwrc.usgs.gov/bbs'>Breeding bird survey of North America</a>)… For a list of ecological data sets, check out <a href='https://ecologicaldata.org/find-data'>Ecologicaldata.org</a>.</p>
+
+ 
+<p>Data in Ecology are often times small, patchy (i.e. missing years or having spatial gaps), and statistically distributed in ways that make them incredibly challenging to handle. And in traditional studies, Ecologists who are used to such data, have analyzed and interpreted that information using statistical techniques appropriate for small datasets (linear regression or LOGIT-type functions, chi-squared tests, etc…). This is changing however as more and more data become available with Ecological data just beginning to edge into the world of big data (thanks to satellites, GPS tracking technologies, and the like).  Now, we are at a point where we can gather information on the entire distribution of a species (See for example, the <a href='http://www.penguinmap.com'>MAPPPD PROJECT</a>, or <a href='http://www.gbif.org'>GBIF</a> ).  This is leading up to a disconnect between advanced statistical techniques and current ecological thinking, which is perhaps harming the field of Ecology.  In other words, datasets in Ecology are too big for traditionally trained Ecologists, and too small (or too gappy) for Big Data scientists.</p>
+
+
+<p>I have pondered this problem a lot over the past many years, without having given a name to the problem. I have even gone on to blame University systems for not adequately training Ecologists and biologists in “big data” thinking. However, recent discussions with colleagues Heather Lynch, Christian Che-Castaldo, and students at the <a href='https://lynchlab.com'>LYNCH LAB FOR QUANTITATIVE ECOLOGY</a> have helped to focus my thinking on this. Dr. Lynch best described this disconnected area as <strong><u>“MESOSCALE DATA SCIENCE”</u></strong>.  This would be the type of data science needed to be perform analysis on complex, gappy data typically found in Ecology.  So, it is perhaps unfair to judge universities for not preparing Ecologists in “big data” thinking.  Instead, the issue lies in an un-resolved and un-identified field of study.</p>
+
+<p>What steps do we take from here? How do we move forward with “mesoscale” data science?  I am personally of the belief that the answer lies in the machine learning community.</p>
+
+<p>We have already seen advances in <strong><u>MESOSCALE DATA SCIENCE</u></strong> in Ecology, but are only now realizing it as a progressing field. For example, advances in <a href='http://www.natureserve.org/conservation-tools/species-distribution-modeling'>SPECIES DISTRIBUTION MODELS</a> have been driven by these issues I’ve just described. Supervised classification algorithms like <a href='https://en.wikipedia.org/wiki/Random_forest'>RANDOM FORESTS</a>, and <a href='https://en.wikipedia.org/wiki/Gradient_boosting'>GRADIENT BOOSTED MODELING</a> have shown great success in predicting to very large (and very small) presence / absence (occupancy) datasets. They have also been used with variable success on <a href='http://onlinelibrary.wiley.com/doi/10.1890/13-2023.1/full'>TIME-SERIES DATA</a>. <a href='http://www.jmlr.org/papers/volume15/delgado14a/source/delgado14a.pdf'>RESEARCH</a> has also shown that these tree based classifiers are amongst the best (even compared to neural nets which are heavily used by big data scientists). Combining what we know based on some of the advancement in mesoscale data science with lessons from big data (i.e. numerical optimization, better gradient descent methods, use of complex tensors), I believe we’re on the cusp of greatly advancing our knowledge of Ecological systems.</p>
+ 
+<p>This relies greatly on two things…</p>
+<ol type='1' style='font-family:Roboto;font-size:18px;font-weight:600'>
+	<li> Ecologists being trained at Universities need to be trained specifically for mesoscale data science questions. Perhaps courses developed entirely around these large (i.e. large for Ecologists) and gappy datasets need to be put in place… or courses that sort of revolve around data analysis need to be re-labeled as such.</li>
+	<li> Big data scientists need to be willing to step back from their comfort zone and meet Ecologists at a level which allows us to tackle these complex problems. Although big data scientists may not be Ecologists and understand the systems, they are incredible problem solvers, and view data in ways in which we aren’t trained.</li>
+</ol> 
+
+<p>So, I challenge some of the big data thinkers to approach us and discuss these issues. How can we use big data techniques to handle datasets that are only n = 50 – 2000? How can we dig deeper into our parameters and covariates in ways we haven’t thought of? Merging big data with traditional small data sets (like those in ecology) forms the core of Mesoscale data science.</p>
+
+
+<p><a href='http://www.ispreview.co.uk/index.php/2013/11/ericsson-report-shows-80-mobile-broadband-data-traffic-surge-since-2012.html'> Figure 1 source: Ericsson report </a></p>
+
+
+
+
+<div class='signature'>
+	<h4><img src='../../img/Grant.png' width=5% /> Dr. Grant R.W. Humphries</h4>
+</div>
+
+
+<p> I would love to meet you on Twitter! You can follow our blog there, and see all sorts of interesting posts that aren't just cats on a roomba!<a href='https://twitter.com/blackbawks' class="btn btn-block btn-social btn-twitter" style='font-family:Roboto;font-size:14px;font-weight:300'><span class="fa fa-twitter"></span> @Blackbawks</a> </p>
+
+
+
+</body>
+</html>

@@ -1,0 +1,406 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+
+  * {
+    margin: 0;
+  }
+  html, body {
+    height: 100%;
+  }
+  html {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Roboto, Arial, sans-serif;
+    font-size: 62.5%;
+    color: white;
+    
+  }
+  body {
+    font-size: 1.8rem;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+
+  }
+
+.fixed-bg {    
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+  h1, h2, h3, h4 {
+    font-family: Roboto;
+  }
+  h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  p {
+    font-family: Roboto;
+  }
+
+.container {
+    position:relative;
+    width:1000px;
+    height:auto;
+    margin: 0 auto;
+    background-color:rgba(255, 255, 255, 0.3);
+}
+
+  #blackbawkstitle {
+     font-family:Lato Black;
+     color:black;
+     text-align:center;
+     margin:0 0 0 0;
+     padding-bottom:0px;
+  }
+
+
+
+.panel6 {
+  background-color:rgba(204, 255, 255,0.8)
+ }
+
+.panel6 .container-fluid .row {
+  margin-bottom:20px;
+}
+
+
+address p {
+  font-family:Roboto;
+  font-size:24px;
+}
+
+address span {
+  font-family:Roboto;
+  font-size:18px;
+
+}
+
+
+
+
+  .footerpanel {
+    background-color:#E1C85A;
+  }
+
+
+
+  .wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -7rem;
+    position: relative;
+  }
+
+  .website-nav {
+    position: relative;
+    padding: 5rem;
+  }
+
+  .website-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .website-nav ul li {
+    float: left;
+    padding: 0.5rem 2rem 0.5rem 0;
+    line-height: 21px;
+  }
+
+  .website-nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .home-link {
+    font-weight: bold;
+  }
+
+  .message .text {
+    float: left;
+  }
+
+  .message:after, .website-nav:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+  .graphics {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 0;
+  }
+  .graphics .tower svg {
+    width: calc(100vw);
+    height: calc(90vh);
+  }
+
+  .graphics .cloud {
+    top: 30rem;
+    position: relative;
+
+  }
+  .page-content {
+    padding: 1rem 5rem;
+  }
+
+  .page-content p {
+    margin-bottom: 1rem;
+  }
+
+  .path {
+    stroke-dasharray: 4000;
+    stroke-dashoffset: 4000;
+    animation: dash 5s linear forwards;
+  }
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  @media (min-height: 500px) and (min-width: 700px) {
+    .message {
+      padding: 0;
+      width: 50%;
+      left: calc(50vw - 5rem);
+      top: calc(15vh - 5rem);
+    }
+    .message .text {
+      padding-right: 0rem;
+    }
+    .graphics {
+      display: block;
+      margin-bottom: 6rem;
+    }
+    .message .twitter-link img {
+      width: 70%;
+      height: 70%;
+    }
+    .page-content {
+      padding: 3rem 5rem;
+    }
+  }
+
+  @media (min-height: 500px) and (min-width: 1240px) {
+    .message {
+      left: calc(50vw - 10rem);
+      top: calc(25vh - 5rem);
+    }
+    h1 {
+      font-size: 5rem;
+    }
+    .message .twitter-link img {
+      width: 80%;
+      height: 80%;
+    }
+  }
+
+  @media (min-aspect-ratio: 11/5)  {
+    .graphics {
+      display: none;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+/* Toggle Styles */
+
+#menu-toggle {
+  margin-bottom:20px;
+}
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+    margin-top:80px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+
+/* Blog styles */
+
+.blog p {
+    font-family:Roboto;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.blog h1 {
+    font-family:Roboto;
+}
+
+.blog h2 {
+    font-family:Roboto;
+}
+
+.blog .date {
+   font-family:Roboto;
+
+}
+
+.blog .signature {
+    font-family:Roboto;
+    font-size:14px;
+}
+
+#socialbuttons {
+   position:absolute;
+   right:10px;
+   bottom: 100px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

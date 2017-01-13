@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Blackbawks Test</title>
+  <meta name="description" content=""/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>          
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js "></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.3.14/proj4.js"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>    
+  <script src="https://code.highcharts.com/highcharts-more.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="js/bootstrap-table-expandable.js"></script>
+  <script src="js/bootstrap-filestyle.min.js"></script>  
+  <script src="js/blogs.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+	<script>
+	  WebFont.load({
+	    google: {
+	      families: ['Droid Sans', 'Droid Serif', 'Lato']
+	    }
+	  });
+	</script>
+
+
+
+
+  <link href="css/blog.css" rel="stylesheet">
+  <link href="css/gradients.css" rel="stylesheet">
+  <link href="css/bootstrap-social.css" rel="stylesheet">
+  <script src="https://use.fontawesome.com/0de6f82067.js"></script>
+
+
+  <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/bootstrap-table-expandable.css"/>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'/>
+       
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"/>    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css"/>
+  <link rel="stylesheet" href="css/jquery-ui.css"/>
+
+</head>
+  <body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container-fluid">
+
+		<div class='row'>
+			<div class='col-md-3 col-sm-3 col-xs-3'>
+				<img src='../img/ColouredLogo_small.png' style='float:left;' width=25% /><span style='font-family:Roboto;position:absolute;bottom:10px;'><strong><i>Black Bawks</i></strong> Data Science</span>
+			</div>
+
+			<div class='col-md-9 col-sm-9 col-xs-9'>
+			<ul class="nav navbar-nav" style='float:right;'>
+			  <li><a href="about.html">About</a></li>
+			  <li><a href="services.html">Services</a></li>
+			  <li><a href="publications.html">Publications</a></li>
+			  <li><a href="current.html">Current projects</a></li>
+			  <li><a href="contact.html">Contact</a></li>
+			  <li><a href="blog.html">Contact</a></li>
+			</ul>
+			</div>
+
+		</div>
+
+	  </div>
+	</nav>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Black Bawks Data Corner
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="btn-1" data-toggle="collapse" data-target="#submenu1" aria-expanded="false">2017 Blog articles</a>
+			<ul class="nav collapse" id="submenu1" role="menu" aria-labelledby="btn-1"> 
+				<li><a href='#'>Mesoscale data. Jan 15, 2017</a></li>			
+			</ul>
+				
+                </li>
+
+            </ul>
+	
+	<div 
+
+	<div id='socialbuttons'>
+		<a href='https://twitter.com/blackbawks' class="btn btn-block btn-social-icon btn-twitter" style='font-family:Roboto;font-size:14px;font-weight:300'>
+			<span class="fa fa-twitter"></span>
+		</a>
+		<a href='https://www.facebook.com/Blackbawks' class="btn btn-block btn-social-icon btn-facebook" style='font-family:Roboto;font-size:14px;font-weight:300'>
+			<span class="fa fa-facebook"></span>
+		</a>
+		<a href='https://github.com/Blackbawks' class="btn btn-block btn-social-icon btn-github" style='font-family:Roboto;font-size:14px;font-weight:300'>
+			<span class="fa fa-github"></span>
+		</a>
+	</div>
+
+
+
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-10 col-md-10">
+                        <h1>Welcome to the Black Bawks data blog!</h1>
+			<p>Eat, drink, be merry, and do data science...</p>
+			<hr style='border-color:#000000;height:4px;' />			                                                
+                    </div>
+
+		    <div class="col-lg-2 col-md-2">
+			<a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+		    </div>
+		    <div class="col-lg-8 col-md-8">
+			<div id='mostrecent' class='blog'>				
+			</div>
+		    </div>
+
+
+                </div>
+            </div>
+
+
+
+
+
+
+	  <div class='footerpanel'>
+		<div class='container-fluid'>
+			<div class='row'>
+				<div class='col-md-4'>
+					<p style='font-size:14px'>Logo &#169; Catherine C. Humphries, 2016 </p>
+				</div>
+				<div class='col-md-8'>
+					<p style='float:right;font-size:14px'>All material on this website are &#169; Black Bawks 2016 </p>
+				</div>
+			
+			</div>
+		</div>
+	  </div>
+
+
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+
+
+
+
+
+ 
+
+
+
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+
+</body>
+</html>

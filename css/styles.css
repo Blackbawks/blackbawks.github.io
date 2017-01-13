@@ -1,0 +1,410 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+
+  * {
+    margin: 0;
+  }
+  html, body {
+    height: 100%;
+  }
+  html {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Roboto, Arial, sans-serif;
+    font-size: 62.5%;
+    color: white;
+    
+  }
+  body {
+    font-size: 1.8rem;
+    -webkit-font-smoothing: antialiased;
+
+  }
+
+.fixed-bg {    
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+  h1, h2, h3, h4 {
+    font-family: Roboto;
+  }
+  h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  p {
+    font-family: Roboto;
+  }
+
+.container {
+    position:relative;
+    width:1000px;
+    height:auto;
+    margin: 0 auto;
+    background-color:rgba(255, 255, 255, 0.3);
+}
+
+  #blackbawkstitle {
+     font-family:Lato Black;
+     color:black;
+     text-align:center;
+     margin:0 0 0 0;
+     padding-bottom:0px;
+  }
+
+
+ #sooty {
+   box-shadow: 10px 10px 5px #888888;
+ }
+
+
+#panel1 .container-fluid {
+    padding-top:100px;
+}
+
+  .panel2 {     
+     background-color:rgba(242,242,242,0.5) ;
+  }
+
+ .panel3 {
+
+background: #c2e59c; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #c2e59c , #64b3f4); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #c2e59c , #64b3f4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+ }
+
+
+.panel4 {
+
+  background-color:rgba(255, 249, 229,0.8); 
+ }
+
+
+.panel5 {
+
+  background: #403B4A; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #403B4A , #E7E9BB); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #403B4A , #E7E9BB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+ }
+
+.panel5 .container .row {
+    padding-bottom:20px;
+}
+
+
+.panel5 .container .row .col-md-4 img {
+	margin: auto;
+        display: block;
+
+}
+
+.panel5 .container .row .col-md-3 img {
+	margin: auto;
+        display: block;
+
+}
+
+.panel6 {
+  background-color:rgba(204, 255, 255,0.8)
+ }
+
+.panel6 .container-fluid .row {
+  margin-bottom:20px;
+}
+
+
+address p {
+  font-family:Roboto;
+  font-size:24px;
+}
+
+address span {
+  font-family:Roboto;
+  font-size:18px;
+
+}
+
+
+
+
+
+  #map {
+    height: 200px;
+    width: 100%;
+    box-shadow: 10px 10px 5px #888888;
+   }
+
+
+
+
+  .footerpanel {
+    background-color:#E1C85A;
+  }
+
+
+  .wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -7rem;
+    position: relative;
+  }
+
+  .website-nav {
+    position: relative;
+    padding: 5rem;
+  }
+
+  .website-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .website-nav ul li {
+    float: left;
+    padding: 0.5rem 2rem 0.5rem 0;
+    line-height: 21px;
+  }
+
+  .website-nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .home-link {
+    font-weight: bold;
+  }
+
+  .message .text {
+    float: left;
+  }
+
+  .message:after, .website-nav:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+  .graphics {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 0;
+  }
+  .graphics .tower svg {
+    width: calc(100vw);
+    height: calc(90vh);
+  }
+
+  .graphics .cloud {
+    top: 30rem;
+    position: relative;
+
+  }
+  .page-content {
+    padding: 1rem 5rem;
+  }
+
+  .page-content p {
+    margin-bottom: 1rem;
+  }
+
+  .path {
+    stroke-dasharray: 4000;
+    stroke-dashoffset: 4000;
+    animation: dash 5s linear forwards;
+  }
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  @media (min-height: 500px) and (min-width: 700px) {
+    .message {
+      padding: 0;
+      width: 50%;
+      left: calc(50vw - 5rem);
+      top: calc(15vh - 5rem);
+    }
+    .message .text {
+      padding-right: 0rem;
+    }
+    .graphics {
+      display: block;
+      margin-bottom: 6rem;
+    }
+    .message .twitter-link img {
+      width: 70%;
+      height: 70%;
+    }
+    .page-content {
+      padding: 3rem 5rem;
+    }
+  }
+
+  @media (min-height: 500px) and (min-width: 1240px) {
+    .message {
+      left: calc(50vw - 10rem);
+      top: calc(25vh - 5rem);
+    }
+    h1 {
+      font-size: 5rem;
+    }
+    .message .twitter-link img {
+      width: 80%;
+      height: 80%;
+    }
+  }
+
+  @media (min-aspect-ratio: 11/5)  {
+    .graphics {
+      display: none;
+    }
+  }
+
+
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(255,255,255,0.9);
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+  text-align: center;
+}
+
+/* The Close Button */
+.close {
+  color: black;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.prev {
+left: 0;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.maps {
+  opacity: 0.95;
+}
+
+.active,
+.maps:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 10%;
+}
+
+
