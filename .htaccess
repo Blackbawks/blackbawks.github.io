@@ -1,10 +1,15 @@
 
+Options +MultiViews
+
+RewriteRule ^blog.html /blog/
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
 RewriteRule ^index\.php$ - [L]
-RewriteRule ^blog.html?$ /blog/
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
