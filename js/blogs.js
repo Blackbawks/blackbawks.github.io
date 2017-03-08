@@ -1,9 +1,6 @@
 
 $( document ).ready( function() {
 
-	$('.submen').click(function() {
-		return false;
-	});
 
 	$(".getblog").click(function () {
 		alert('yes')
