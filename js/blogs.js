@@ -3,7 +3,6 @@ $( document ).ready( function() {
 
 
 	$(".getblog").click(function () {
-		alert('yes')
         	var addressValue = $(this).attr("name");
         	$.get(addressValue,function(data) {
 			$( "#mostrecent" ).html( data );
