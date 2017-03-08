@@ -10,7 +10,7 @@ $( document ).ready( function() {
 
     	});
 
-	$.get('/blogs/2017/Mesoscale-data-science.html', function(data) {
+	$.get('/blogs/2017/Simulate-data-illegal-fishing.html', function(data) {
 		$( "#mostrecent" ).html( data );
 	});
 });
