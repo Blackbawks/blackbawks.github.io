@@ -2,12 +2,12 @@
 $( document ).ready( function() {
 
 	$(".getblog").click(function () {
-		
-        	var addressValue = $(this).attr("href");
+		alert('yes')
+        	var addressValue = $(this).attr("name");
         	$.get(addressValue,function(data) {
 			$( "#mostrecent" ).html( data );
 		});
-		return false;
+
     	});
 
 	$.get('/blogs/2017/Mesoscale-data-science.html', function(data) {
